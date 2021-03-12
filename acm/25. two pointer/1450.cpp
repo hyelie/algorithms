@@ -8,6 +8,7 @@ using namespace std;
 typedef pair<int, int> pii;
 typedef pair<int, string> pis;
 typedef pair<string, int> psi;
+int N, C;
 
 void solve();
 
@@ -19,7 +20,7 @@ int main(void) {
 }
 
 void solve() {
-
+	cin >> N >> C;
 
 	return;
 }

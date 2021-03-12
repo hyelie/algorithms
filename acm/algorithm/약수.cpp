@@ -1,8 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <string>
-#include <queue>
+#include <cmath>
 
 using namespace std;
 typedef pair<int, int> pii;
@@ -19,6 +18,16 @@ int main(void) {
 }
 
 void solve() {
+	int N;
+	cin >> N;
+
+	// sqrt : cmath include«œ±‚
+	for (int i = 1; i < sqrt(N); i++) {
+		cout << i << '\n';
+		if (i != N / i) {
+			cout << N / i << '\n';
+		}
+	}
 
 
 	return;

@@ -23,3 +23,19 @@ void solve() {
 
 	return;
 }
+
+/*
+
+dijkstra 갱신이
+dist뿐만 아니라
+금액도 있어야함
+
+dist[nxtv] > dist[curv] + weight && curm + nxtm < M
+이어야 갱신.
+
+dp[i][j] : i번 vertex까지 j원으로 갔을 떄 최소시간
+
+각 vertex : 
+DP
+
+*/

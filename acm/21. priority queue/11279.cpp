@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <string>
 #include <queue>
 
 using namespace std;
@@ -19,7 +18,23 @@ int main(void) {
 }
 
 void solve() {
-
+	int N; cin >> N;
+	int input;
+	priority_queue<int> pq;
+	while (N--) {
+		cin >> input;
+		if (input == 0) {
+			if (pq.empty()) cout << "0\n";
+			else {
+				cout << pq.top() << '\n';
+				pq.pop();
+			}
+			// pop
+		}
+		else {
+			pq.push(input);
+		}
+	}
 
 	return;
 }

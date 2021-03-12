@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <string>
-#include <queue>
 
 using namespace std;
 typedef pair<int, int> pii;
@@ -19,7 +17,18 @@ int main(void) {
 }
 
 void solve() {
+	int f, s;
+	while (1) {
+		cin >> f >> s;
+		if (f == 0 && s == 0) break;
 
+		bool factor = (s % f == 0);
+		bool multiple = (f % s == 0);
+
+		if (factor) cout << "factor\n";
+		else if (multiple) cout << "multiple\n";
+		else cout << "neither\n";
+	}
 
 	return;
 }
